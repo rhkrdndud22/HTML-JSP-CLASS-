@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae optio beatae voluptate nihil modi odio mollitia tenetur id dolorem nesciunt quo ea, tempora nobis! Aspernatur ad cupiditate dignissimos assumenda?</h1>
+    <h1 id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae optio beatae voluptate nihil modi odio mollitia tenetur id dolorem nesciunt quo ea, tempora nobis! Aspernatur ad cupiditate dignissimos assumenda?</h1>
+    <h1 id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae optio beatae voluptate nihil modi odio mollitia tenetur id dolorem nesciunt quo ea, tempora nobis! Aspernatur ad cupiditate dignissimos assumenda?</h1>
+    
+    <h1 id="four"> assumenda?</h1>
+    <h1 id="five"> assumenda?</h1>
+    <h1 id="six"> assumenda?</h1>
+    
+    
+    
+    <button id="btn_one">javaS</button>
+    <button id="btn_two">jQ</button>
+    <script>
+        //jQ 이벤트 추가
+        $('#btn_two').click(function(){$('#first').css('color','blue')})
+        $('#btn_two').click(function(){$('#first').css('background','red')})
+        $('#btn_two').click(function(){$('#first').css('border','1px solid black')})
+        //메소드 채이닝(위의 코드를 아래와 같이 적을 수도 있다.)
+    
+        //$('#btn_two').click(function(){$('#first').css('color','blue')}).css('background','pink').css('border','5px solid green')
+        $('#btn_two').click(function() {$('#second').css('color','red')})
+                     .click(function(){$('#second').css('background','yellow')})
+                     .click(function(){$('#second').css('border','5px solid green')})
+        //한 번의 이벤트로 메소드 채이닝 이용해서 여러가지 속성 한꺼번에 추가
+        $('#btn_two').click(
+        function() 
+        {
+            $('#third').css('color','orange').css('background','gold').css('border','5px solid cyan')
+        } 
+        )
+
+
+        //js 이벤트 추가
+        //onclick=한번에 하나의 이벤트 추가
+
+        document.querySelector('#btn_one').onclick = function()
+        {
+            document.querySelector('#four').style.color='blue'
+        }
+        //onclick를 밑에서 추가하면 위에껀 사라진다.
+
+        let btn_one=document.querySelector('#btn_one')
+        let four = document.querySelector('#four')
+        btn_one.onclick=function(){
+            four.style.background='yellow'
+        }
+        //이렇게 사용하면 밑에 코드만 적용된다
+
+        //addebent listner 가 중첩가능
+        btn_one.addEventListener('click', function()
+            {five.style.color='red'}
+        )
+        btn_one.addEventListener('click', function()
+            {five.style.border='3px blue solid'}
+        )
+        btn_one.addEventListener('click', ()=> {six.style.background='springgreen'})
+        //function(){} 축약한게 ()=>        
+        
+        
+    
+
+    
+    </script>
+
+
+
+</body>
+</html>

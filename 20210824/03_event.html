@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus est, illum facere dignissimos inventore eaque autem quod repellat suscipit ipsa ratione similique veritatis incidunt architecto eos. Ipsum, suscipit earum.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus est, illum facere dignissimos inventore eaque autem quod repellat suscipit ipsa ratione similique veritatis incidunt architecto eos. Ipsum, suscipit earum.</h1>
+
+    <button id='btn1'>js버튼</button>
+    <button id='btn2'>jQ버튼</button>
+
+    <script>
+
+        let btn1= document.getElementsById('btn1')
+        btn1.onclick =function()
+        {
+            document.getElementsByTagName('h1')[0].style.color='red'
+        }
+
+        let btn1_1=document.querySelector('#btn1')
+        btn1_1.onclick=function()
+        {
+            document.querySelector('h1').style.background='yellow'
+            document.querySelectorAll('h1')[0].style.color='pink'
+        }
+
+
+        btn1_1.addEventListener('click', ()=>
+        {
+            document.querySelectorAll('h1')[0].style.color='red'
+        }
+        )
+        
+        btn1_1.addEventListener('click', ()=>
+        {
+            document.querySelectorAll('h1')[0].style.border='1px solid black'
+        }
+        )
+        //jQ
+        $('#btn2').click(function() {$('h1:first').css('color', 'blue') } ).click(function(){$('h1:nth-child(2)').css('color', 'green')})
+
+
+    </script>
+
+
+
+
+</body>
+</html>
