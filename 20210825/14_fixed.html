@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{width: 100px; height: 100px;}
+        .red{
+            background: red;
+            left: 50px;
+            top: 50px;  
+        position: fixed;      }
+        .green{background: green;
+            left: 0px;
+            top: 0px;
+            position: fixed;
+        
+        }
+        .blue{background: blue;
+        position: fixed;
+    top: 300px;
+    /* 원래 있어야 하는 위치보다 300 내려감 */
+    }
+        .yellow{
+            /* 포지션이 안 정해졌으니 static */
+            margin-top: 50px;
+            background: yellow;
+            /* 원래 있어야 하는 위치에서 50만큼 아래
+            대신 이건 여백값을 줘서 내린 거 */
+        
+    }
+    .square
+    {
+        width: 30px;
+        height: 30px;
+        border: solid black 1px;
+        background: fuchsia;
+        position: fixed;
+        /* 부모태그가 static 라면 fixed와 똑같이적용 */
+        left: 25px;
+        top: 25px;
+    }
+        /* position */
+        /* static relative absolute fixed */
+        /* 3.absoulte */
+        /* 내가 입력한 좌표의 절대값으로 이동한다. */
+        /* fixed도 좌표의 절대값으로 이동한다는 특징이있음 */
+        /* 부모태그가 static이 아니라면 자식태그가 
+        absoulute */
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue">
+        <div class="square"></div>
+    </div>
+    <div class="box yellow">
+        <div class="square"></div>
+    </div>
+</body>
+</html>

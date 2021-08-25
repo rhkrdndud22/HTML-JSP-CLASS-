@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:first-child{color:red}          
+        /*선택자 삽입 시 공백은 주의 해야 한다.  */
+        div :first-child{background: springgreen;}
+        /* 첫번째 태그를 선택하는 건 맞는데  */
+        div:first-child{border: solid black 3px;}
+        /* 일단은 body에서 첫번째 자손 태그를 발견하고  */
+        /* 그 다음에 기존 div 태그 안에 있는 div를 선택한다. */
+    </style>
+</head>
+<body>
+ 
+    <div>
+        <p>Lorem, ipsum dolor.1</p>
+        <p>Lorem, ipsum dolor.2</p>
+        <p>Lorem, ipsum dolor.3</p>
+        <div>
+            <p>Lorem, ipsum.1-1</p>
+            <p>Lorem, ipsum.1-2</p>
+            <p>Lorem, ipsum.1-3</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h6>Lorem.</h6>
+            <h6>Lorem.</h6>
+        </div>
+    </div>
+    <p>01Lorem.</p>
+    <p>02Lorem.</p>
+    <p>03Lorem.</p>
+</body>
+</html>

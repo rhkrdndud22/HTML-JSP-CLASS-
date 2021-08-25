@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .red{
+            background: red;
+            left: 10px;
+            top: 10px;
+           
+        }
+        .green{
+            background: rgb(26, 65, 26);
+            left: 50px;
+            top: 50px;
+          
+        }
+        .blue{
+            background: blue;
+            left: 90px;
+            top: 90px;
+           
+        }
+        body>div{
+            /* 핵심은 높이를 주는것이고
+            2번째는 포지션값을 스태틱 이외의 값
+            3번째는 overflow값을 주는것 */
+            border: 10px solid black;
+            height: 100px;
+            overflow: hidden;
+            
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem.lorerlrejrklrejk</h1>
+    <div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    </div>
+    <h1>Lorem, ipsum.</h1>
+</body>
+</html>

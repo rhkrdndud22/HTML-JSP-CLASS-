@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]
+        {
+            background: yellow;
+        }
+    </style>
+    <style>
+        input[type=checkbox]:checked+div 
+        /* checked 체크가 된  상태에서 +는 동위 선택자이다 */
+        {
+            height: 300px;
+            color: red;
+        }
+        div{
+            overflow: hidden;
+            height: 0;
+            /* 애니메이션 효과 */
+            transition-duration: 1s;
+            /* 만약에 웹브라우저가 오래 된거면 아래의 코드를 추가해야함 */
+            -ms-trainsition-duration:1s;
+            -webkit-trainsition-duration:1s;
+            -moz-trainsition-duration:1s;
+            /* ms,webkit,moz이런 걸 벤더프리픽스 */
+            /* 일종의 테스트 기능 일단 써보는거 */
+        }
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- 둘다 타입이 텍스트인데 css입장에서는 type이 text가 아니면 적용안함 -->
+    <input type="text">
+    <input>
+    <!-- 사실상 위에 type이 텍스트지만 명세를 하지않아 스타일적용을 받지 못함 -->
+    <input type="checkbox">
+    <div>
+        <h1>lorem1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eum quisquam eius magni consectetur excepturi! Porro sequi sint, pariatur possimus repellendus veritatis impedit nostrum reprehenderit cum quam, praesentium nobis a.</p>
+    </div>
+</body>
+</html>

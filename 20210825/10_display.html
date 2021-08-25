@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: inline-block;
+            /* inline처럼 수평정렬은 되고 block과는 다르게 줄을 다 차지하지는 않지만
+            넓이 높이 값은 있음 */
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        #box2{
+            display: inline;
+            width: 200px;
+            height: 200px;
+            background: cyan;
+        }
+        #box3{
+                        width: 200px;
+            height: 200px;
+            background: coral;
+        }
+        /* 만약 첫번째 span태그를 블록속성으로 바꾸려면 */
+        /* span:first-of-type{
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <!-- span은 인라인 div는 block -->
+    <span>dummy</span>
+    <div id="box">
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+    
+    <div id="box2">
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+    <div id="box3">
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+    <span>dummy2</span>
+</body>
+</html>
