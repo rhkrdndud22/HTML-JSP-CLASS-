@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+#root, html, body {
+	height: 100%;
+	width: 100%;
+	/*높이 넓이가 100%이면 안에 있는 것을 중간에 오고 싶으면
+	display:flex를 한뒤 justify-content를 하면 수평에서 중간
+	 */
+	background-color: #002233;
+	color:#000000;
+	/*ffffff  */
+	/*255->ff*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.container{
+	display:flex;
+	width:450px;
+	height:400px;
+	background-color:#fff;
+	
+}
+
+
+.left_panel{
+	width:43%;
+	height: 100%;
+	color: #ccc;
+}
+
+.left_panel>img{
+	width:100%;
+	height: 100%;
+}
+.right_panel{
+	width:57%;
+	height: 100%;
+}
+.right_panel_main{
+	color:#999;
+	width:400px;
+	height: 300px;
+}
+ .right_panel_main input[type='submit']{
+		
+		height:35px;
+		background-color:#0000cc;
+		color: white;
+		cursor:pointer;
+	}
+ 
+ 
+ .right_panel_main>div{
+ 	margin: 20px 0;
+ }
