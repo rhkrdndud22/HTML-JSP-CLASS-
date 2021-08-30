@@ -24,7 +24,19 @@ svg {
 </style>
 </head>
 <body>
+<!--
+
+d3.js -> csv 파일 가져와서 출력해보기
+		json 파일 가져와서 출력해보기
+		mysql 내용 가져와서 그래프로 출력해보기
+		동그라미 그래프
+
+	0~1
+	0.000001*300=0
+	0.
+  -->
 	<form action="loginchk" method="post">
+	<div><p style="color:white">${sessionScope.dto.id}님 환영 합니다.</p></div>
 		<div id="root">
 			<div class="container">
 
@@ -32,11 +44,14 @@ svg {
 					<h1>데이터에 따른 그래프 표시</h1>
 					<svg id="myGraph"></svg>
 					<button type="button" id="testBtn">업데이트버튼</button>
-					<script src="/mocom/resources/d3/sample01.js"></script>
+					<!-- <script src="/mocom/resources/d3/sample01.js"></script> -->
+					<script src="/mocom/resources/d3/sample03.js"></script>
 				</div>
 				<div class="right_panel">piechart</div>
 
 			</div>
+	
+		
 		</div>
 	</form>
 </body>
