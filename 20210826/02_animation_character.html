@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        // 0이상 limit미만 혹은의 랜덤한 숫자를 생성하는 함수
+        function nextRandomInteger(limit) {
+            return Math.round(Math.random() * limit)
+        }
+        // 랜덤한 알파벳을 리턴
+        let randomAlphabet = (
+            function () {
+
+                let alphabet = '가나다라마바사아자차카파타하'
+                return function () {
+                    return alphabet.charAt(nextRandomInteger(25));
+                }
+            }
+
+        )();
+
+        //속도 관련된 함수
+        //random알파벳 안에는 함수가 들어감
+        function randomSpeed(maxSpeed) {
+            return Math.random() * maxSpeed - Math.random() * maxSpeed
+        }
+    </script>
+
+    <script>
+        let canvasWidth = 700
+        let canvaseHeight = 400
+        //애를 객체처럼 쓸거임
+        function MovingText() {
+            //x,y vx, vy, body라는 멤버가 있음
+            this.x = nextRandomInteger(canvasWidth)//0~700까지의 값 리턴
+            this.y = nextRandomInteger(canvaseHeight)//0~400까지의 값 리턴
+            this.vx = randomSpeed(10); // 속도조절 0부터 10까지의 속도
+            this.vy = randomSpeed(10);
+
+
+            //body 태그안에 body라는 이름의 구성요소를 집어넣음
+            this.body = document.createElement('h1')
+            this.body.innerHTML = randomAlphabet();
+            this.body.style.position = 'absolute'
+            document.body.appendChild(this.body)
+        }
+
+        // prototype(함수를 바깥으로 뺌)
+        //생성자를 만드는 중
+        MovingText.prototype.move = function () {
+            //글자가 어느쪽으로든 끝까지 가게 되면
+            if (this.x < 0 || this.x > canvasWidth) { this.vx *= -1; }
+            if (this.y < 0 || this.y > canvaseHeight) { this.vy *= -1; }
+            //방향 전환 
+            this.x += this.vx;
+            this.y += this.vy;
+            //실질적 이동
+            //this.body는 body 태그
+            this.body.style.left = this.x + 'px'
+            this.body.style.top = this.y + 'px'
+        }
+
+    </script>
+
+    <script>
+        window.onload = function () {
+            let MovingTexts = []
+            for (let i = 0; i < 100; i++) {
+                MovingTexts.push(new MovingText())
+            }
+
+            setInterval(function () {
+                for (var i in MovingTexts) {
+                    MovingTexts[i].move()
+                }
+            }, 1000 / 30)
+        }
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+
+</body>
+
+</html>
